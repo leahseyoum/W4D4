@@ -26,4 +26,13 @@ class Array
     def my_transpose
         self.transpose
     end
+
+    def stock_prices
+        profit = []
+        lowest_day = self.min
+        max_day = self.max 
+        profit << self.index(lowest_day)
+        profit << self.index(max_day)
+        profit  
+    end
 end

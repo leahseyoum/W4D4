@@ -21,35 +21,19 @@ describe Array do
         end
     end
 
+    describe "stock_prices" do
+        it "finds the most profitable pair" do 
+            expect([2,10,15,11,30].stock_prices).to eq([0,4])
+        end
+    end
+
+    #Write a method that takes an array of stock prices (prices on days 0, 1, ...), 
+    # and outputs the most profitable pair of days on which to first buy the stock and then sell the 
+    # stock. Remember, you can't sell stock before you buy it!
+
+
+
 
 end
 
-# my_transpose
-# To represent a matrix, or two-dimensional grid of numbers, you can write an array containing arrays which represent rows:
 
-# rows = [
-#   [0, 1, 2],
-#   [3, 4, 5],
-#   [6, 7, 8]
-# ]
-
-# row1 = rows[0]
-# row2 = rows[1]
-# row3 = rows[2]
-# You could equivalently have stored the matrix as an array of columns:
-
-# cols = [
-#   [0, 3, 6],
-#   [1, 4, 7],
-#   [2, 5, 8]
-# ]
-# Write a method, my_transpose, which will convert between the row-oriented and column-oriented representations. You may assume square matrices for simplicity's sake. Usage will look like the following:
-
-# my_transpose([
-#   [0, 1, 2],
-#   [3, 4, 5],
-#   [6, 7, 8]
-# ])
-#  # => [[0, 3, 6],
-#  #     [1, 4, 7],
-#  #     [2, 5, 8]]
