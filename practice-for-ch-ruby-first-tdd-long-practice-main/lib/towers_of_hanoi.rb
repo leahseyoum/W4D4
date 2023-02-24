@@ -12,7 +12,7 @@ class Towersofhanoi
 
     def valid?(input)
         v1, v2 = input
-        @stack[v1].last < @stack[v2]
+        @stack[v1].last < @stack[v2] || @stack[v2].empty?
     end
 
     def moves
@@ -28,7 +28,7 @@ class Towersofhanoi
     end
 
     def won
-        if self[2] == [4, 3, 2, 1]
+        if @stack[2] == [4, 3, 2, 1]
             puts "YOU WON!"
             return true
         else
