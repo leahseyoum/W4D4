@@ -1,0 +1,37 @@
+require "towers_of_hanoi.rb"
+require "rspec"
+
+describe Towersofhanoi do
+    # s(:game) {Towersofhanoi.new()}
+    describe '#move' do
+        
+    end
+
+    describe '#won' do
+        context "Won returns true" do
+            it "game won" do
+                expect(Towersofhanoi.new.won).to eq(true)
+            end
+        end
+
+        context "Won returns false" do
+            it "game not won" do
+                expect(Towersofhanoi.new.won).to eq(false)
+            end
+        end
+    end
+
+end
+
+# Write a Towers of Hanoi game.
+
+# Keep three arrays, which represent the piles of discs. Pick a representation of the discs to store in the arrays, maybe just a number representing their size. Don't worry too much about making the user interface pretty.
+
+# In a loop, prompt the user (using gets). Ask what pile to select a disc from and where to put it.
+
+# After each move, check to see if they have succeeded in moving all the discs to the final pile. If so, they win!
+
+# Note: Don't worry about testing the UI. Testing console I/O is tricky (i.e., don't bother checking gets or puts). Focus on:
+
+# #move
+# #won?
